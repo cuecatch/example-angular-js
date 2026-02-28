@@ -14,7 +14,7 @@
         <button (click)="goNext()"> &#8594; Next</button>
       </div>
       <div class="survey-container">
-        <survey-compo #my_survey cache="memory" [src]="surveySource" (surveychange)="handleChange($event)" />
+        <cue-catch #my_survey cache="memory" [src]="surveySource" (cuechange)="handleChange($event)" />
       </div>
     </div>
   </div>

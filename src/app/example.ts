@@ -11,7 +11,7 @@ export const exampleJSON = {
     {
       "blocks": [
         {
-          "title": "Overall, how would you rate your experience with SurveyCompo?",
+          "title": "Overall, how would you rate your experience with CueCatch?",
           "inputs": [
             {
               "type": "NUMBER_SCALE",
@@ -51,7 +51,7 @@ export const exampleJSON = {
     {
       "blocks": [
         {
-          "title": "Did SurveyCompo solve your problem?",
+          "title": "Did CueCatch solve your problem?",
           "inputs": [
             {
               "type": "RADIO",
@@ -73,17 +73,17 @@ export const exampleJSON = {
             {
               "type": "LIKERT_SCALE",
               "likertInputPreset": "AGREEMENT",
-              "label": "SurveyCompo is easy to use"
+              "label": "CueCatch is easy to use"
             },
             {
               "type": "LIKERT_SCALE",
               "likertInputPreset": "AGREEMENT",
-              "label": "SurveyCompo is flexible"
+              "label": "CueCatch is flexible"
             },
             {
               "type": "LIKERT_SCALE",
               "likertInputPreset": "AGREEMENT",
-              "label": "SurveyCompo is affordable"
+              "label": "CueCatch is affordable"
             }
           ]
         }
@@ -92,7 +92,7 @@ export const exampleJSON = {
     {
       "blocks": [
         {
-          "title": "How likely are you to use SurveyCompo again?",
+          "title": "How likely are you to use CueCatch again?",
           "inputs": [
             {
               "type": "NUMBER_SCALE",

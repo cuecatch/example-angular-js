@@ -3,8 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import {exampleJSON} from './example';
 
 const surveys: Record<string, unknown> = {
-  survey1: 'https://raw.githubusercontent.com/SurveyCompo/examples/main/examples/inputs/source.json',
-  survey2: 'https://raw.githubusercontent.com/SurveyCompo/examples/main/examples/style/source.json',
+  survey1: 'https://raw.githubusercontent.com/cuecatch/examples/main/examples/inputs/source.json',
+  survey2: 'https://raw.githubusercontent.com/cuecatch/examples/main/examples/style/source.json',
   local: JSON.stringify(exampleJSON),
 };
 @Component({
@@ -16,7 +16,7 @@ const surveys: Record<string, unknown> = {
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  @ViewChild('my_survey') surveycompo: ElementRef| undefined = undefined;
+  @ViewChild('my_survey') cuecatch: ElementRef| undefined = undefined;
 
   surveySource = surveys['survey1'];
 
@@ -25,8 +25,8 @@ export class AppComponent {
   }
 
   setSurveyJson = () => {
-    if (this.surveycompo?.nativeElement) {
-      this.surveycompo.nativeElement.src = exampleJSON;
+    if (this.cuecatch?.nativeElement) {
+      this.cuecatch.nativeElement.src = exampleJSON;
     }
   }
 
@@ -34,12 +34,12 @@ export class AppComponent {
     console.log(event);
   }
   resetSurvey = () => {
-    this.surveycompo?.nativeElement?.api?.reset()
+    this.cuecatch?.nativeElement?.api?.reset()
   }
   goNext = () => {
-    this.surveycompo?.nativeElement?.api?.goNext()
+    this.cuecatch?.nativeElement?.api?.goNext()
   }
   goPrev = () => {
-    this.surveycompo?.nativeElement?.api?.goPrev()
+    this.cuecatch?.nativeElement?.api?.goPrev()
   }
 }
